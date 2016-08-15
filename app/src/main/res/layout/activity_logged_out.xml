@@ -85,7 +85,8 @@
         android:layout_height="0dp"
         android:gravity="center"
         android:layout_weight="1"
-        android:text="Forgot Password?"/>
+        android:text="Forgot Password?"
+        android:autoLink="web"/>
 
     <Button
         android:layout_width="wrap_content"
@@ -116,9 +117,11 @@
             android:layout_height="0dp"
             android:gravity="center"
             android:layout_weight="1"
-            android:text="Not a member? Register Now!"/>
-
-
+            android:text="Not a member? Register Now!"
+            android:clickable="true"
+            android:contextClickable="true"
+            android:onClick="startRegistration"
+            android:autoLink="web"/>
 
         <Space
             android:layout_width="match_parent"
